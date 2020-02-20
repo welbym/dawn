@@ -504,8 +504,24 @@ body {
     letter-spacing: 1px;
 }
 
+#panels > ul:nth-child(2) .links li h1 {
+    color: #383838;
+    font-size: 22px;
+    margin-bottom: .5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#panels > ul:nth-child(3) .links li h1 {
+    color: #383838;
+    font-size: 22px;
+    margin-bottom: .5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
 #panels > ul:not(:first-child) li {
-    padding: .5em;
+    padding: .6em;
     /* display: inline; */
 }
 
