@@ -368,7 +368,7 @@ body {
     width: 100%;
     height: 100%;
     right: 100%;
-    background: #fff url("../img/bg-1.gif") repeat center left fixed;
+    background: #fff url("../img/bg-1.jpg") repeat center left fixed;
     transition: all .6s;
 }
 
@@ -386,8 +386,8 @@ body {
     box-shadow: inset -1px 0 var(--flavour);
 }
 
-#panels ul:nth-child(2) { background: #fff url("../img/bg-2.gif") repeat center left fixed; }
-#panels ul:nth-child(3) { background: #fff url("../img/bg-3.gif") repeat center left fixed; }
+#panels ul:nth-child(2) { background: #fff url("../img/bg-2.jpg") repeat center left fixed; }
+#panels ul:nth-child(3) { background: #fff url("../img/bg-3.jpg") repeat center left fixed; }
 
 #panels ul[active] {
     right: 0;
