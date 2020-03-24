@@ -386,7 +386,7 @@ body {
     box-shadow: inset -1px 0 var(--flavour);
 }
 
-#panels ul:nth-child(2) { background: #fff url("../img/bg-2.jpg") repeat center left fixed; }
+#panels ul:nth-child(2) { background: #fff url("../img/bg-2.jpg") repeat center center fixed; }
 #panels ul:nth-child(3) { background: #fff url("../img/bg-3.jpg") repeat center left fixed; }
 
 #panels ul[active] {
