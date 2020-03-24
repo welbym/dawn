@@ -6,105 +6,130 @@
         <link rel="stylesheet" type="text/css" href="css/awoo.min.css">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200|Roboto:100,400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <title>~</title>
-</head>
-<body>
-    <div id="search">
-        <div>
-            <input type="text" spellcheck="false" placeholder="search">
-            <button class="close"><i class="material-icons">&#xE5CD;</i></button>
-            <ul class="search-engines"></ul>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <title>~</title>
+    </head>
+    <body>
+        <div id="search">
+            <div>
+                <input type="text" spellcheck="false" placeholder="search">
+                <button class="close">
+                    <i class="material-icons">&#xE5CD;</i>
+                </button>
+                <ul class="search-engines"></ul>
+            </div>
         </div>
-    </div>
-    <div id="links" class="-">
-        <div id="tabs" class="!-">
-            <cols>
-                <ul class="- indicator">
-                    <li active></li>
+        <div id="links" class="-">
+            <div id="tabs" class="!-">
+                <cols>
+                    <ul class="- indicator">
+                        <li active="active"></li>
+                    </ul>
+                    <div class="+ widgets col-end">
+                        <p class="time">00<span>:00</span></p>
+                        <div class="!+ + weather-config">
+                            <input name="color" type="text" placeholder="location">
+                        </div>
+                        <div class="+ weather">
+                            <button class="!+ edit">edit</button>
+                            <p temperature="temperature">4ºC</p>
+                            <p weather="weather" class="+">
+                                <i class="material-icons" sunny="sunny">wb_sunny</i>
+                            </p>
+                        </div>
+                    </div>
+                </cols>
+            </div>
+            <div id="panels">
+                <ul class="uni" active="active">
+                    <div class="links">
+                        <li>
+                            <h1>General</h1>
+                            <a class="link" href="https://learn.illinois.edu/my/">moodle</a>
+                            <a class="link" href="https://compass2g.illinois.edu/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_1_1">compass</a>
+                            <a class="link" href="https://apps.uillinois.edu/selfservice/">self service</a>
+                            <a class="link" href="https://faculty.math.illinois.edu/~murphyrf/teaching/M220-S2020/section-al1/">math dashboard</a>
+                            <a class="link" href="https://drive.google.com/drive/u/1/folders/1gvuaeabYFMdcHkV__7zPl1EUMF4WpM4A">google drive</a>
+                        </li>
+                        <li>
+                            <h1>Comp Sci</h1>
+                            <a href="https://prairielearn.engr.illinois.edu/pl">prairie learn</a>
+                            <a href="https://cs125-forum.cs.illinois.edu/">125 forum</a>
+                            <a href="https://cs125.cs.illinois.edu/learn/#Spring_2020">125 slides</a>
+                            <a href="http://cs196.cs.illinois.edu/">196 home</a>
+                            <a href="https://www.twitch.tv/cs196illinois">196 twitch</a>
+                        </li>
+                        <li>
+                            <h1>Piazza</h1>
+                            <a href="https://piazza.com/class/k5xeml1e4b32u">cs 196</a>
+                            <a href="https://piazza.com/class/k7z09mf42534cd">math general</a>
+                            <a href="https://piazza.com/class/k7z2egykghf1hu">math discussion</a>
+                        </li>
+                    </div>
                 </ul>
-                <div class="+ widgets col-end">
-                    <p class="time">00<span>:00</span></p>
-                    <div class="!+ + weather-config">
-                        <input name="color" type="text" placeholder="location">
+                <ul class="tech">
+                    <div class="links">
+                        <li>
+                            <h1>Code</h1>
+                            <li>
+                                <a href="https://github.com/welbym/">github</a>
+                            </li>
+                            <li>
+                                <a href="https://docs.oracle.com/javase/8/docs/api/">java docs</a>
+                            </li>
+                            <li>
+                                <a href="https://doc.rust-lang.org/std/index.html">rust docs</a>
+                            </li>
+                            <li>
+                                <a href="https://crates.io/">rust crates</a>
+                            </li>
+                            <li>
+                                <a href="https://projecteuler.net/archives">euler</a>
+                            </li>
+                        </li>
                     </div>
-                    <div class="+ weather">
-                        <button class="!+ edit">edit</button>
-                        <p temperature>4ºC</p>
-                        <p weather class="+">
-                            <i class="material-icons" sunny>wb_sunny</i>
-                        </p>
+                </ul>
+                <ul class="boards">
+                    <div class="links">
+                        <li>
+                            <h1>Useful</h1>
+                            <li>
+                                <a href="https://4chan.org/wg">/wg/</a>
+                            </li>
+                            <li>
+                                <a href="https://4chan.org/wsg">/wsg/</a>
+                            </li>
+                        </li>
+                        <li>
+                            <h1>Shit post</h1>
+                            <li>
+                                <a href="https://4chan.org/fit">/fit/</a>
+                            </li>
+                            <li>
+                                <a href="https://4chan.org/mu">/mu/</a>
+                            </li>
+                            <li>
+                                <a href="https://4chan.org/ck">/ck/</a>
+                            </li>
+                        </li>
                     </div>
-                </div>
-            </cols>
+                </ul>
+            </div>
         </div>
-        <div id="panels">
-            <ul class="uni" active>
-                <div class="links">
-                    <li>
-                        <h1>General</h1>
-                        <a class="link" href="https://learn.illinois.edu/my/">moodle</a>
-                        <a class="link" href="https://compass2g.illinois.edu/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_1_1">compass</a>
-                        <a class="link" href="https://apps.uillinois.edu/selfservice/">self service</a>
-                        <a class="link" href="https://faculty.math.illinois.edu/~murphyrf/teaching/M220-S2020/section-al1/">math dashboard</a>
-                        <a class="link" href="https://drive.google.com/drive/u/1/folders/1gvuaeabYFMdcHkV__7zPl1EUMF4WpM4A">google drive</a>
-                    </li>
-                    <li>
-                        <h1>Comp Sci</h1>
-                        <a href="https://prairielearn.engr.illinois.edu/pl">prairie learn</a>
-                        <a href="https://cs125-forum.cs.illinois.edu/">125 forum</a>
-                        <a href="https://cs125.cs.illinois.edu/learn/#Spring_2020">125 slides</a>
-                        <a href="http://cs196.cs.illinois.edu/">196 home</a>
-                        <a href="https://piazza.com/class/k5xeml1e4b32u">piazza</a>
-                    </li>
-                </div>
-            </ul>
-            <ul class="tech">
-                <div class="links">
-                  <li>
-                      <h1>Code</h1>
-                      <li><a href="https://github.com/welbym/">github</a></li>
-                      <li><a href="https://docs.oracle.com/javase/8/docs/api/">java docs</a></li>
-                      <li><a href="https://www.rust-lang.org/learn">rust</a></li>
-                      <li><a href="https://projecteuler.net/archives">euler</a></li>
-                    </li>
-                    <li>
-                      <h1>PC</h1>
-                      <li><a href="https://pcpartpicker.com/">pc partpicker</a></li>
-                  </li>
-                </div>
-            </ul>
-            <ul class="boards">
-                <div class="links">
-                  <li>
-                      <h1>Useful</h1>
-                      <li><a href="https://4chan.org/wg">/wg/</a></li>
-                      <li><a href="https://4chan.org/wsg">/wsg/</a></li>
-                  </li>
-                  <li>
-                      <h1>Shit post</h1>
-                      <li><a href="https://4chan.org/fit">/fit/</a></li>
-                      <li><a href="https://4chan.org/mu">/mu/</a></li>
-                      <li><a href="https://4chan.org/ck">/ck/</a></li>
-                  </li>
-                </div>
-            </ul>
+        <div class="|" id="todo">
+            <button class="+ add"><img src="img/add.png"></button>
+            <div class="+ addTodo">
+                <input type="text" value="" placeholder="todo" spellcheck="false">
+            </div>
+            <rows class="items">
+                <h1 class="+">todo</h1>
+            </rows>
         </div>
-    </div>
-    <div class="|" id="todo">
-        <button class="+ add"><img src="img/add.png"></button>
-        <div class="+ addTodo">
-            <input type="text" value="" placeholder="todo" spellcheck="false">
-        </div>
-        <rows class="items">
-            <h1 class="+">todo</h1>
-        </rows>
-    </div>
-    <script type="text/javascript" src="js/strftime.js"></script>
-    <script type="text/javascript" src="js/todo.js"></script>
-    <script type="text/javascript" src="js/weather.js"></script>
-    <script type="text/javascript" src="js/powerline.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/search.js"></script>
-</body>
+        <script type="text/javascript" src="js/strftime.js"></script>
+        <script type="text/javascript" src="js/todo.js"></script>
+        <script type="text/javascript" src="js/weather.js"></script>
+        <script type="text/javascript" src="js/powerline.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+    </body>
 </html>

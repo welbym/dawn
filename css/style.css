@@ -28,7 +28,9 @@
 }
 
 :root {
-    --accent: crimson;
+    --accent: #56abfe;
+    --accent2: #ef98de;
+    --accent3: #d83c82;
     --bg: #0f0f12;
     --done: #37eb94;
     --undone: #ff1b91;
@@ -374,19 +376,19 @@ body {
 
 #panels ul:nth-child(2),
 #tabs ul li[active]:nth-child(2) ~ li:last-child {
-    --flavour: #16a2a2;
+    --flavour: var(--accent2);
 }
 
 #panels ul:nth-child(3),
 #tabs ul li[active]:nth-child(3) ~ li:last-child {
-    --flavour: #5b52e4;
+    --flavour: var(--accent3);
 }
 
 #panels ul .links {
     box-shadow: inset -1px 0 var(--flavour);
 }
 
-#panels ul:nth-child(2) { background: #fff url("../img/bg-2.jpg") repeat center left fixed; }
+#panels ul:nth-child(2) { background: #fff url("../img/bg-2.jpg") repeat center center fixed; }
 #panels ul:nth-child(3) { background: #fff url("../img/bg-3.jpg") repeat center left fixed; }
 
 #panels ul[active] {
